@@ -1,0 +1,30 @@
+# Vivado ka saara junk (don't need this really, makes cloning the repo kinda difficult lmao from personal experience)
+.Xil/
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+.gen/
+
+# Vivado logs (Again, dual boot setups mean a lot of switching and cloning so cleaning up junk)
+*.log
+*.jou
+*.str
+
+# Vivado temporary files (more vivado junk i don't need)
+*.pb
+*.backup
+*.tmp
+
+# Simulation dumps
+*.vcd
+*.wdb
+
+# OS junk (windows ^^)
+Thumbs.db
+.DS_Store
+
+# Editor junk (teammates used vscode and such.)
+.vscode/
+.idea/
