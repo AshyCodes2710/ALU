@@ -48,10 +48,10 @@ The ALU uses a multiplexer-style structure where multiple operation blocks compu
 |001     |        SUB|
 |010     |        AND|
 |011     |         OR|
-|100     |        NOT|
+|100     |        XOR|
 |101     |       NAND|
 |110     |        NOR|
-|111     |     PASS A|
+|111     |      NOT A|
 
 ---
 
