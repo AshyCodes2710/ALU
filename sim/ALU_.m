@@ -41,9 +41,8 @@ function ALU_()
       out = bitor(A,B);
 
   case 4
-      opName = "NOT";
-      out = bitxor(A,[1 1 1]); % we don't actually have a "not" so we do this instead.
-  % xor of A against 1 is NOT.
+      opName = "XOR";
+      out = bitxor(A,B);
 
   case 5
       opName = "NAND";
@@ -55,8 +54,10 @@ function ALU_()
       out = bitxor(bitor(A,B),[1 1 1]);
 
   case 7
-      opName = "PASS";
-      out = A; % buffer :)
+      opName = "NOT A";
+      % out = ~A; % commented cuz this _can_ misebehave
+      out = bitxor(A,[1 1 1]); % we don't actually have a "not" so we do this instead.
+  % xor of A against 1 is NOT.
 
   end
 
